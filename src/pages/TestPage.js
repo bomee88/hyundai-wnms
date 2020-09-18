@@ -10,25 +10,10 @@ import { Line, Pie, Doughnut, Bar, Radar, Polar } from 'react-chartjs-2';
 import Page from 'components/Page';
 
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-const HOURS = [
-  '00',
-  '01',
-  '02',
-  '03',
-  '04',
-  '05',
-  '06',
-  '07',
-  '08',
-  '09',
-  '10',
-  '11',
-  '12',
-];
 
 const genLineData = (moreData = {}, moreData2 = {}) => {
   return {
-    labels: HOURS,
+    labels: MONTHS,
     datasets: [
       {
         label: 'Dataset 1',
@@ -36,12 +21,6 @@ const genLineData = (moreData = {}, moreData2 = {}) => {
         borderColor: getColor('primary'),
         borderWidth: 1,
         data: [
-          randomNum(),
-          randomNum(),
-          randomNum(),
-          randomNum(),
-          randomNum(),
-          randomNum(),
           randomNum(),
           randomNum(),
           randomNum(),
@@ -58,12 +37,6 @@ const genLineData = (moreData = {}, moreData2 = {}) => {
         borderColor: getColor('secondary'),
         borderWidth: 1,
         data: [
-          randomNum(),
-          randomNum(),
-          randomNum(),
-          randomNum(),
-          randomNum(),
-          randomNum(),
           randomNum(),
           randomNum(),
           randomNum(),
